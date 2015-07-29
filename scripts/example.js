@@ -47,6 +47,6 @@ module.exports = function(robot) {
     });
     robot.hear(/funny/i, function(res) {
         res.send("Ayy Lmao!");
-    }
+    });
 };
 
