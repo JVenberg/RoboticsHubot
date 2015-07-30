@@ -1,30 +1,27 @@
 {
-  "name": "hubot-openshift",
-  "version": "1.0.0",
-  "description": "Hubot on OpenShift",
-  "keywords": [
-    "Hubot",
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],  
-  "author": {
-    "name": "Katie Miller",
-    "email": "katie@codemiller.com",
-    "url": "http://www.codemiller.com/"
-  },  
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codemiller/hubot-openshift"
-  },  
-  "engines": {
-    "node": ">= 0.8.x",
-    "npm": ">= 1.1.x"
-  },
+  "name": "hubot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "JackVenberg <jvenberg@gmail.com>",
+  "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0"
+    "hubot": "^2.13.2",
+    "hubot-diagnostics": "0.0.1",
+    "hubot-google-images": "^0.1.5",
+    "hubot-google-translate": "^0.2.0",
+    "hubot-help": "^0.1.1",
+    "hubot-heroku-keepalive": "0.0.4",
+    "hubot-maps": "0.0.2",
+    "hubot-pugme": "^0.1.0",
+    "hubot-redis-brain": "0.0.3",
+    "hubot-rules": "^0.1.1",
+    "hubot-scripts": "^2.16.1",
+    "hubot-shipit": "^0.2.0",
+    "hubot-slack": "^3.3.0",
+    "request": "^2.60.0"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "scripts": {
     "start": "PORT=$OPENSHIFT_NODEJS_PORT BIND_ADDRESS=$OPENSHIFT_NODEJS_IP HEROKU_URL=$OPENSHIFT_APP_DNS REDIS_URL=redis://:$REDIS_PASSWORD@$OPENSHIFT_REDIS_HOST:$OPENSHIFT_REDIS_PORT bin/hubot -n Hubot -a slack"
