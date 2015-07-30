@@ -48,8 +48,5 @@ module.exports = function(robot) {
     robot.hear(/funny|lol/i, function(res) {
         res.send("Ayy Lmao!");
     });
-    robot.hear(/test/i, function(res) {
-        res.send("Test");
-    });
 };
 
