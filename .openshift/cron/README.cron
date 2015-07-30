@@ -23,5 +23,9 @@ See: man crontab or above link for more details and see the the weekly/
 PLEASE NOTE: The Cron cartridge must be installed in order to run the configured jobs.
 
 For more information about cron, consult the documentation:
+<<<<<<< HEAD
 http://openshift.github.io/documentation/oo_cartridge_guide.html#cron
 http://openshift.github.io/documentation/oo_user_guide.html#cron
+=======
+https://docs.openshift.org/origin-m4/oo_cartridge_guide.html#cron
+>>>>>>> 5e0c55ad5d4a66f74038c0e7dff2a7a4da3d23f3
